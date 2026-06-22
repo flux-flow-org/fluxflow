@@ -4,8 +4,6 @@ import { Menu, X } from "lucide-react";
 import { WhatsAppIcon } from "./ui/BrandIcons";
 import Wordmark from "./ui/Wordmark";
 import { NAV_LINKS, CONTACT } from "../data/content";
-import Icon from "./ui/Icon";
-import { NAV_LINKS } from "../data/content";
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -55,8 +53,6 @@ export default function Navbar() {
             width="32"
             height="32"
           />
-        <a href="#hero" className="flex items-center gap-2.5" aria-label="FluxFlow — início">
-          <Icon variant="fade" className="h-[22px] w-[22px]" width="22" height="22" />
           <Wordmark className="text-xl" />
         </a>
 

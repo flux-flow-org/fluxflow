@@ -1,11 +1,7 @@
 import { Mail } from "lucide-react";
 import Reveal from "./ui/Reveal";
 import Wordmark from "./ui/Wordmark";
-<<<<<<< HEAD
 import { WhatsAppIcon, InstagramIcon } from "./ui/BrandIcons";
-=======
-import Icon from "./ui/Icon";
->>>>>>> 867a677fa53387b95f17f7ffe5a2d74071ab4ecf
 import { fadeIn } from "../lib/animations";
 import { NAV_LINKS, CONTACT } from "../data/content";
 
@@ -45,7 +41,6 @@ export default function Footer() {
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
           {/* Marca */}
           <div className="max-w-sm">
-<<<<<<< HEAD
             <a
               href="#hero"
               className="flex items-center gap-2.5"
@@ -58,10 +53,6 @@ export default function Footer() {
                 width="36"
                 height="36"
               />
-=======
-            <a href="#hero" className="flex items-center gap-2.5" aria-label="FluxFlow — início">
-              <Icon variant="white" className="h-6 w-6" width="24" height="24" />
->>>>>>> 867a677fa53387b95f17f7ffe5a2d74071ab4ecf
               <Wordmark className="text-2xl" />
             </a>
             <p className="mt-5 text-[15px] leading-relaxed text-dim">

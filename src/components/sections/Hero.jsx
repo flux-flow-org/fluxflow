@@ -4,7 +4,6 @@ import { WhatsAppIcon } from "../ui/BrandIcons";
 import AnimatedBackground from "../ui/AnimatedBackground";
 import { staggerContainer, fadeUp } from "../../lib/animations";
 import { CONTACT, TECNOLOGIAS } from "../../data/content";
-import Icon from "../ui/Icon";
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -18,26 +17,6 @@ export default function Hero() {
 
       <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-16 px-6 py-16 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:py-24">
         {/* Coluna texto */}
-      {/* Ícone decorativo flutuante — visível apenas em telas grandes */}
-      <motion.div
-        initial={{ opacity: 0, scale: 0.92 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ duration: 1.4, delay: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className="pointer-events-none absolute right-40 top-1/3 hidden -translate-y-1/2 xl:block"
-        aria-hidden="true"
-      >
-        <motion.div
-          animate={{ y: [0, -18, 0] }}
-          transition={{ duration: 9, repeat: Infinity, ease: "easeInOut" }}
-        >
-          <Icon
-            variant="fade"
-            className="h-[420px] w-[420px] opacity-[0.32]"
-          />
-        </motion.div>
-      </motion.div>
-
-      <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24">
         <motion.div
           variants={staggerContainer(0.12, 0.05)}
           initial="hidden"
