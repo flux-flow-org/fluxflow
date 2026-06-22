@@ -3,11 +3,8 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { WhatsAppIcon } from "../ui/BrandIcons";
 import AnimatedBackground from "../ui/AnimatedBackground";
 import { staggerContainer, fadeUp } from "../../lib/animations";
-<<<<<<< HEAD
 import { CONTACT, TECNOLOGIAS } from "../../data/content";
-=======
 import Icon from "../ui/Icon";
->>>>>>> 867a677fa53387b95f17f7ffe5a2d74071ab4ecf
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -19,10 +16,8 @@ export default function Hero() {
     >
       <AnimatedBackground />
 
-<<<<<<< HEAD
       <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-16 px-6 py-16 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:py-24">
         {/* Coluna texto */}
-=======
       {/* Ícone decorativo flutuante — visível apenas em telas grandes */}
       <motion.div
         initial={{ opacity: 0, scale: 0.92 }}
@@ -43,7 +38,6 @@ export default function Hero() {
       </motion.div>
 
       <div className="relative z-10 mx-auto w-full max-w-6xl px-6 py-24">
->>>>>>> 867a677fa53387b95f17f7ffe5a2d74071ab4ecf
         <motion.div
           variants={staggerContainer(0.12, 0.05)}
           initial="hidden"
