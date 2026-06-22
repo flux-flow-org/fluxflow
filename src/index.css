@@ -1,0 +1,192 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --flux-purple: #b08eef;
+    --flux-deep: #8b5fd6;
+    --ink-bg: #0d1115;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    background-color: #0d1115;
+    color: #d7dce2;
+    font-family: "DM Sans", system-ui, sans-serif;
+    font-weight: 300;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Bricolage Grotesque", "DM Sans", system-ui, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    line-height: 1.04;
+    letter-spacing: -0.02em;
+  }
+
+  ::selection {
+    background: var(--flux-purple);
+    color: #13181c;
+  }
+
+  /* Foco visível e consistente para acessibilidade */
+  :focus-visible {
+    outline: 2px solid var(--flux-purple);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+
+  /* Scrollbar discreta na identidade da marca */
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #0a0d10;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(176, 142, 239, 0.25);
+    border-radius: 20px;
+    border: 2px solid #0a0d10;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(176, 142, 239, 0.45);
+  }
+}
+
+@layer components {
+  /* Painel de vidro — glassmorphism sutil da marca */
+  .glass {
+    background: linear-gradient(
+      180deg,
+      rgba(26, 33, 40, 0.72),
+      rgba(19, 24, 28, 0.55)
+    );
+    backdrop-filter: blur(14px);
+    -webkit-backdrop-filter: blur(14px);
+    border: 1px solid rgba(176, 142, 239, 0.18);
+  }
+
+  /* Vitrificação da topbar suspensa — translúcida, porém legível.
+     Blur + saturate elevam o contraste do conteúdo sem perder o efeito de vidro. */
+  .glass-nav {
+    background: rgba(13, 17, 21, 0.55);
+    backdrop-filter: blur(20px) saturate(160%);
+    -webkit-backdrop-filter: blur(20px) saturate(160%);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    box-shadow:
+      0 16px 50px -20px rgba(0, 0, 0, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.07);
+  }
+  .glass-nav-scrolled {
+    background: rgba(13, 17, 21, 0.72);
+    border-color: rgba(176, 142, 239, 0.22);
+  }
+
+  /* Eyebrow editorial com risca — herdado do brandbook */
+  .eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 14px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+    letter-spacing: 0.32em;
+    text-transform: uppercase;
+    color: var(--flux-purple);
+  }
+  .eyebrow::before {
+    content: "";
+    width: 42px;
+    height: 1px;
+    background: var(--flux-purple);
+  }
+
+  /* Texto com gradiente de marca */
+  .text-gradient {
+    background: linear-gradient(120deg, #c9b2f4 0%, #b08eef 45%, #8b5fd6 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Gradiente animado para destaques fluidos (estilo "flux") */
+  .text-gradient-flow {
+    background: linear-gradient(
+      120deg,
+      #c9b2f4 0%,
+      #b08eef 30%,
+      #8b5fd6 50%,
+      #b08eef 70%,
+      #c9b2f4 100%
+    );
+    background-size: 220% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* Grade pontilhada tech — fundo de seção */
+  .tech-grid {
+    background-image: radial-gradient(
+      rgba(176, 142, 239, 0.18) 1px,
+      transparent 1px
+    );
+    background-size: 26px 26px;
+  }
+
+  /* Borda em gradiente para cards de destaque */
+  .border-gradient {
+    border: 1px solid transparent;
+    background:
+      linear-gradient(#13181c, #13181c) padding-box,
+      linear-gradient(135deg, rgba(176, 142, 239, 0.55), rgba(139, 95, 214, 0.1) 60%)
+        border-box;
+  }
+
+  /* Máscara de esmaecimento lateral (marquee de logos / linhas) */
+  .mask-fade-x {
+    mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+    -webkit-mask-image: linear-gradient(
+      to right,
+      transparent,
+      black 12%,
+      black 88%,
+      transparent
+    );
+  }
+}
+
+/* Respeitar prefers-reduced-motion globalmente como rede de segurança.
+   As animações JS (Framer Motion) já checam o hook useReducedMotion. */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
