@@ -135,7 +135,7 @@ export default function Hero() {
               }`}
             >
               <img
-                src="/images/nobg-icon-fade.png"
+                src="public/images/icons/nobg-icon-fade.png"
                 alt=""
                 className="h-1/2 w-1/2 drop-shadow-[0_10px_30px_rgba(176,142,239,0.5)]"
               />
