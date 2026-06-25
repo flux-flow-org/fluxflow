@@ -47,7 +47,7 @@ export default function Footer() {
               aria-label="FluxFlow — início"
             >
               <img
-                src="/images/nobg-icon-fade.png"
+                src="public/images/icons/nobg-icon-fade.png"
                 alt=""
                 className="h-9 w-9 drop-shadow-[0_4px_14px_rgba(176,142,239,0.45)]"
                 width="36"
