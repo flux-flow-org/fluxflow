@@ -17,7 +17,7 @@ export default function Services() {
         <SectionHeading
           eyebrow="02 · Serviços"
           title="O que construímos para você"
-          lead="Do produto digital ao sistema interno, cobrimos toda a jornada técnica — com a mesma obsessão por fluidez e performance."
+          lead="Do produto digital ao sistema interno, cobrimos toda a jornada técnica , com a mesma obsessão por fluidez e performance."
         />
 
         <motion.div

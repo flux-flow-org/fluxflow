@@ -4,7 +4,7 @@ import { WhatsAppIcon } from "./BrandIcons";
 import { CONTACT } from "../../data/content";
 
 /**
- * Botão flutuante de WhatsApp — aparece após o usuário rolar a página.
+ * Botão flutuante de WhatsApp , aparece após o usuário rolar a página.
  * Fixo no canto inferior direito, com glow pulsante da marca.
  */
 export default function WhatsAppFloat() {

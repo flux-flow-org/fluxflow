@@ -31,7 +31,7 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden border-t border-line bg-ink-deep">
-      {/* Glow inferior — assinatura do brandbook */}
+      {/* Glow inferior , assinatura do brandbook */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute -bottom-48 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-flux-purple/15 blur-[120px]"
@@ -44,7 +44,7 @@ export default function Footer() {
             <a
               href="#hero"
               className="flex items-center gap-2.5"
-              aria-label="FluxFlow — início"
+              aria-label="FluxFlow , início"
             >
               <img
                 src="public/images/icons/nobg-icon-fade.png"
@@ -56,7 +56,7 @@ export default function Footer() {
               <Wordmark className="text-2xl" />
             </a>
             <p className="mt-5 text-[15px] leading-relaxed text-dim">
-              Sistemas que fluem com o seu negócio. Tecnologia sob medida — do
+              Sistemas que fluem com o seu negócio. Tecnologia sob medida , do
               fluxo à entrega, com precisão.
             </p>
 

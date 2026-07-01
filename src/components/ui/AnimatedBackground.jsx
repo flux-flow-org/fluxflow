@@ -32,7 +32,7 @@ export default function AnimatedBackground() {
         }`}
       />
 
-      {/* Linhas fluidas — o "flux" contínuo */}
+      {/* Linhas fluidas , o "flux" contínuo */}
       <svg
         className="absolute inset-0 h-full w-full"
         preserveAspectRatio="none"

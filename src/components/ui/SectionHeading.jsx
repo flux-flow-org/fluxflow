@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { staggerContainer, fadeUp, viewportOnce } from "../../lib/animations";
 
 /**
- * Cabeçalho de seção editorial — eyebrow numerado + título + lead.
+ * Cabeçalho de seção editorial , eyebrow numerado + título + lead.
  * Mantém a hierarquia de headings correta (h2) para SEO/acessibilidade.
  */
 export default function SectionHeading({

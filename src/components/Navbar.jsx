@@ -40,11 +40,11 @@ export default function Navbar() {
             : "glass-nav"
         }`}
       >
-        {/* Marca — ícone em gradiente + wordmark */}
+        {/* Marca , ícone em gradiente + wordmark */}
         <a
           href="#hero"
           className="flex items-center gap-2.5"
-          aria-label="FluxFlow — início"
+          aria-label="FluxFlow , início"
         >
           <img
             src="public/images/icons/nobg-icon-fade.png"
@@ -70,7 +70,7 @@ export default function Navbar() {
           ))}
         </ul>
 
-        {/* CTA desktop — WhatsApp */}
+        {/* CTA desktop , WhatsApp */}
         <div className="hidden md:block">
           <a
             href={CONTACT.whatsappUrl}
@@ -96,7 +96,7 @@ export default function Navbar() {
         </button>
       </nav>
 
-      {/* Menu mobile — painel de vidro suspenso */}
+      {/* Menu mobile , painel de vidro suspenso */}
       <AnimatePresence>
         {open && (
           <motion.div

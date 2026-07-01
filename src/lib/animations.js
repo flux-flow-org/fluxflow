@@ -1,4 +1,4 @@
-// Variants compartilhadas — timing e easing consistentes em toda a página.
+// Variants compartilhadas , timing e easing consistentes em toda a página.
 // Entradas entre 300ms–600ms, easing ease-out natural, stagger de ~120ms.
 
 export const EASE = [0.22, 1, 0.36, 1]; // ease-out suave (cubic-bezier)

@@ -40,7 +40,7 @@ export default function FinalCTA() {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Encaminha a conversa para o WhatsApp com a mensagem pré-preenchida.
-    const texto = `Olá, FluxFlow! Sou ${values.nome || "—"} (${
+    const texto = `Olá, FluxFlow! Sou ${values.nome || ","} (${
       values.email || "sem e-mail"
     }). ${values.mensagem}`;
     window.open(
@@ -53,7 +53,7 @@ export default function FinalCTA() {
 
   return (
     <section id="contato" className="relative overflow-hidden bg-ink py-28 sm:py-32">
-      {/* Fundo diferenciado — gradiente + glow */}
+      {/* Fundo diferenciado , gradiente + glow */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_bottom,rgba(139,95,214,0.18),transparent_60%)]"
@@ -88,7 +88,7 @@ export default function FinalCTA() {
                 variants={fadeUp}
                 className="mt-5 max-w-md text-lg text-dim"
               >
-                Conte o seu desafio. Respondemos rápido com os próximos passos —
+                Conte o seu desafio. Respondemos rápido com os próximos passos ,
                 sem compromisso.
               </motion.p>
 

@@ -103,7 +103,7 @@ export default function Hero() {
           </motion.div>
         </motion.div>
 
-        {/* Coluna visual — ícone em órbita fluida */}
+        {/* Coluna visual , ícone em órbita fluida */}
         <motion.div
           initial={{ opacity: 0, scale: 0.92 }}
           animate={{ opacity: 1, scale: 1 }}
