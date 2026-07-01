@@ -9,8 +9,8 @@ export default function About() {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeading
           eyebrow="01 · Sobre"
-          title="Tecnologia que se adapta — não o contrário."
-          lead="Somos um time de engenheiros e designers obcecados por fluxo. Construímos sistemas que removem atrito do código à experiência — sob medida para cada negócio e prontos para escalar."
+          title="Tecnologia que se adapta , não o contrário."
+          lead="Somos um time de engenheiros e designers obcecados por fluxo. Construímos sistemas que removem atrito do código à experiência , sob medida para cada negócio e prontos para escalar."
         />
 
         {/* Cards de diferenciais */}
@@ -29,7 +29,7 @@ export default function About() {
               transition={{ type: "spring", stiffness: 260, damping: 22 }}
               className="group relative overflow-hidden rounded-brand border border-line bg-ink-surface p-8 transition-shadow duration-300 hover:shadow-glow"
             >
-              {/* Borda superior em gradiente — assinatura do brandbook */}
+              {/* Borda superior em gradiente , assinatura do brandbook */}
               <span className="absolute inset-x-0 top-0 h-0.5 bg-gradient-to-r from-flux-purple to-transparent" />
               {/* Glow roxo no hover */}
               <span className="pointer-events-none absolute -right-10 -top-10 h-32 w-32 rounded-full bg-flux-purple/0 blur-2xl transition-colors duration-500 group-hover:bg-flux-purple/20" />

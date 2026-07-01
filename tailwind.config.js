@@ -21,8 +21,7 @@ export default {
         line: "rgba(176,142,239,0.18)", // bordas / divisores
       },
       fontFamily: {
-        // Display editorial (web) + DM Sans como fonte de corpo/UI da marca.
-        display: ['"Bricolage Grotesque"', '"DM Sans"', "system-ui", "sans-serif"],
+        display: ['"DM Sans"', "system-ui", "sans-serif"],
         body: ['"DM Sans"', "system-ui", "sans-serif"],
         sans: ['"DM Sans"', "system-ui", "sans-serif"],
       },

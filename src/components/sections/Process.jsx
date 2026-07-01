@@ -16,7 +16,7 @@ export default function Process() {
         <SectionHeading
           eyebrow="03 · Processo"
           title="Do fluxo à entrega, com precisão"
-          lead="Um método fluido e transparente. Você acompanha cada etapa — sem caixa-preta, sem surpresas."
+          lead="Um método fluido e transparente. Você acompanha cada etapa , sem caixa-preta, sem surpresas."
         />
 
         <motion.ol

@@ -1,5 +1,5 @@
 /**
- * Wordmark textual FluxFlow — "Flux" em roxo, "Flow" em branco.
+ * Wordmark textual FluxFlow , "Flux" em roxo, "Flow" em branco.
  * Segue o brandbook: o desenho não muda, apenas a cor varia na paleta.
  */
 export default function Wordmark({ className = "" }) {

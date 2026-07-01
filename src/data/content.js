@@ -20,7 +20,7 @@ import {
 // Contato oficial da marca.
 export const CONTACT = {
   email: "fluxflow.contato@gmail.com",
-  // 31 97524-7458 — DDI Brasil (55) para o link do WhatsApp.
+  // 31 97524-7458 , DDI Brasil (55) para o link do WhatsApp.
   whatsappDisplay: "(31) 97524-7458",
   whatsappNumber: "5531975247458",
   whatsappUrl:
@@ -36,12 +36,12 @@ export const NAV_LINKS = [
   { label: "Depoimentos", href: "#depoimentos" },
 ];
 
-// Seção 2 — diferenciais
+// Seção 2 , diferenciais
 export const DIFERENCIAIS = [
   {
     icon: Cpu,
     title: "Engenharia de precisão",
-    desc: "Código testado e arquitetura sólida. Entregamos o que funciona — bem feito, do primeiro deploy ao último.",
+    desc: "Código testado e arquitetura sólida. Entregamos o que funciona , bem feito, do primeiro deploy ao último.",
   },
   {
     icon: Workflow,
@@ -51,11 +51,11 @@ export const DIFERENCIAIS = [
   {
     icon: HeartHandshake,
     title: "Parceria de longo prazo",
-    desc: "Transparência e suporte contínuo. Não somos fornecedor — somos time. Crescemos junto com você.",
+    desc: "Transparência e suporte contínuo. Não somos fornecedor , somos time. Crescemos junto com você.",
   },
 ];
 
-// Seção 3 — serviços (mínimo 4)
+// Seção 3 , serviços (mínimo 4)
 export const SERVICOS = [
   {
     icon: Code2,
@@ -65,7 +65,7 @@ export const SERVICOS = [
   {
     icon: Smartphone,
     title: "Aplicativos Mobile",
-    desc: "Apps nativos e multiplataforma com a fluidez que o usuário espera — iOS e Android.",
+    desc: "Apps nativos e multiplataforma com a fluidez que o usuário espera , iOS e Android.",
   },
   {
     icon: Boxes,
@@ -89,7 +89,7 @@ export const SERVICOS = [
   },
 ];
 
-// Seção — como trabalhamos (processo fluido, inspirado no fluxo da marca)
+// Seção , como trabalhamos (processo fluido, inspirado no fluxo da marca)
 export const PROCESSO = [
   {
     icon: Search,
@@ -117,7 +117,7 @@ export const PROCESSO = [
   },
 ];
 
-// Seção 4 — métricas (contadores animados)
+// Seção 4 , métricas (contadores animados)
 export const METRICAS = [
   { value: 99.9, suffix: "%", label: "Uptime garantido e alta disponibilidade nas soluções desenvolvidas", decimals: 1 },
   { value: 10, suffix: "+", label: "Anos de experiência somada de nossos especialistas em tecnologia" },
@@ -125,7 +125,7 @@ export const METRICAS = [
   { value: 100, suffix: "%", label: "Projetos desenvolvidos em arquitetura Cloud-Native e metodologias ágeis" },
 ];
 
-// Faixa de tecnologias (marquee) — reforça profundidade técnica.
+// Faixa de tecnologias (marquee) , reforça profundidade técnica.
 export const TECNOLOGIAS = [
   "React",
   "Next.js",
@@ -139,11 +139,11 @@ export const TECNOLOGIAS = [
   "GraphQL",
 ];
 
-// Seção 5 — depoimentos (placeholders realistas)
+// Seção 5 , depoimentos (placeholders realistas)
 export const DEPOIMENTOS = [
   {
     quote:
-      "A FluxFlow reescreveu nosso sistema de pedidos do zero. O que era um gargalo virou nosso maior diferencial — processamos 3x mais sem aumentar o time.",
+      "A FluxFlow reescreveu nosso sistema de pedidos do zero. O que era um gargalo virou nosso maior diferencial , processamos 3x mais sem aumentar o time.",
     name: "Marina Castro",
     role: "COO · Distribuidora Norvex",
     initials: "MC",
