@@ -31,6 +31,12 @@ export default function AnimatedBackground() {
           reduce ? "" : "animate-drift-b"
         }`}
       />
+      {/* Faísca de aqua , acento discreto do gradiente assinatura */}
+      <div
+        className={`absolute bottom-8 right-[8%] h-64 w-64 rounded-full bg-flux-aqua/10 blur-[120px] ${
+          reduce ? "" : "animate-drift-a"
+        }`}
+      />
 
       {/* Linhas fluidas , o "flux" contínuo */}
       <svg
@@ -41,8 +47,9 @@ export default function AnimatedBackground() {
       >
         <defs>
           <linearGradient id="fluxLine" x1="0" y1="0" x2="1" y2="0">
-            <stop offset="0%" stopColor="#8B5FD6" stopOpacity="0" />
-            <stop offset="50%" stopColor="#B08EEF" stopOpacity="0.9" />
+            <stop offset="0%" stopColor="#00E5FF" stopOpacity="0" />
+            <stop offset="35%" stopColor="#8B5FD6" stopOpacity="0.7" />
+            <stop offset="60%" stopColor="#B08EEF" stopOpacity="0.9" />
             <stop offset="100%" stopColor="#C9B2F4" stopOpacity="0" />
           </linearGradient>
         </defs>

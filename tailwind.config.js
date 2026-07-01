@@ -3,12 +3,16 @@ export default {
   content: ["./index.html", "./src/**/*.{js,jsx}"],
   theme: {
     extend: {
+      screens: {
+        xs: "425px",
+      },
       colors: {
         // Paleta oficial FluxFlow (brandbook)
         flux: {
           purple: "#B08EEF", // roxo primário
           deep: "#8B5FD6", // roxo profundo / CTA
           soft: "#C9B2F4", // roxo claro / accent
+          aqua: "#00E5FF", // aqua / faísca (acento)
         },
         ink: {
           DEFAULT: "#13181C", // dark primário (seção alternada)
@@ -30,6 +34,10 @@ export default {
       },
       borderRadius: {
         brand: "16px",
+      },
+      backgroundImage: {
+        // Gradiente assinatura do brandbook (45deg aqua , deep , roxo)
+        flow: "linear-gradient(45deg, #00E5FF 0%, #8B5FD6 75%, #B08EEF 100%)",
       },
       boxShadow: {
         glow: "0 30px 80px -30px rgba(176,142,239,0.45)",

@@ -37,7 +37,7 @@ export default function Footer() {
         className="pointer-events-none absolute -bottom-48 left-1/2 h-72 w-[40rem] -translate-x-1/2 rounded-full bg-flux-purple/15 blur-[120px]"
       />
 
-      <Reveal variants={fadeIn} className="relative mx-auto max-w-6xl px-6 py-20">
+      <Reveal variants={fadeIn} className="relative mx-auto max-w-6xl px-5 py-16 sm:px-6 sm:py-20">
         <div className="flex flex-col gap-12 lg:flex-row lg:items-start lg:justify-between">
           {/* Marca */}
           <div className="max-w-sm">
@@ -79,7 +79,7 @@ export default function Footer() {
           </div>
 
           {/* Navegação + contato */}
-          <div className="grid grid-cols-2 gap-12 sm:gap-20">
+          <div className="grid grid-cols-1 gap-10 min-[420px]:grid-cols-2 sm:gap-20">
             <nav aria-label="Navegação do rodapé">
               <h4 className="font-display text-sm font-bold uppercase tracking-wider text-white">
                 Navegação
@@ -137,12 +137,9 @@ export default function Footer() {
         </div>
 
         {/* Copyright */}
-        <div className="mt-16 flex flex-col gap-4 border-t border-line pt-8 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 border-t border-line pt-8 sm:mt-16">
           <p className="text-xs tracking-wide text-dim">
             © {year} FluxFlow. Todos os direitos reservados.
-          </p>
-          <p className="text-xs tracking-wide text-dim">
-            Feito com fluxo · Roxo #B08EEF · Dark #13181C
           </p>
         </div>
       </Reveal>

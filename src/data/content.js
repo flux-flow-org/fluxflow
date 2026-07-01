@@ -6,11 +6,9 @@ import {
   Workflow,
   HeartHandshake,
   Code2,
-  Smartphone,
-  Boxes,
-  Cloud,
   Webhook,
-  BarChart3,
+  Bot,
+  Lightbulb,
   Search,
   PenTool,
   Rocket,
@@ -33,7 +31,7 @@ export const NAV_LINKS = [
   { label: "Sobre", href: "#sobre" },
   { label: "Serviços", href: "#servicos" },
   { label: "Processo", href: "#processo" },
-  { label: "Depoimentos", href: "#depoimentos" },
+  { label: "Projetos", href: "#projetos" },
 ];
 
 // Seção 2 , diferenciais
@@ -63,29 +61,19 @@ export const SERVICOS = [
     desc: "Plataformas e SaaS performáticos, do front à infra. Experiências que carregam rápido e escalam.",
   },
   {
-    icon: Smartphone,
-    title: "Aplicativos Mobile",
-    desc: "Apps nativos e multiplataforma com a fluidez que o usuário espera , iOS e Android.",
-  },
-  {
-    icon: Boxes,
-    title: "Sistemas sob Medida",
-    desc: "ERPs, painéis internos e automações que substituem a planilha caótica por um fluxo único.",
-  },
-  {
-    icon: Cloud,
-    title: "Cloud & DevOps",
-    desc: "Infraestrutura escalável, CI/CD e observabilidade. Deploy seguro, contínuo e sem dor de cabeça.",
-  },
-  {
     icon: Webhook,
     title: "Integrações & APIs",
     desc: "Conectamos seus sistemas, gateways e ferramentas. Tudo conversando, tudo em sincronia.",
   },
   {
-    icon: BarChart3,
-    title: "Dados & Dashboards",
-    desc: "Transformamos dados dispersos em decisões. Métricas claras, em tempo real, onde você precisa.",
+    icon: Bot,
+    title: "Integrações com IA",
+    desc: "Automações e assistentes inteligentes conectados ao seu fluxo. IA aplicada onde gera resultado real.",
+  },
+  {
+    icon: Lightbulb,
+    title: "Consultoria Tech",
+    desc: "Diagnóstico técnico e direção clara. Ajudamos você a decidir o que construir, quando e como.",
   },
 ];
 
@@ -125,18 +113,15 @@ export const METRICAS = [
   { value: 100, suffix: "%", label: "Projetos desenvolvidos em arquitetura Cloud-Native e metodologias ágeis" },
 ];
 
-// Faixa de tecnologias (marquee) , reforça profundidade técnica.
-export const TECNOLOGIAS = [
-  "React",
-  "Next.js",
-  "Node.js",
-  "TypeScript",
-  "React Native",
-  "PostgreSQL",
-  "AWS",
-  "Docker",
-  "Python",
-  "GraphQL",
+// Seção de projetos , card placeholder para customização.
+export const PROJETOS = [
+  {
+    title: "Nome do projeto",
+    desc: "Pequena descrição do projeto: o desafio, a solução construída e o resultado gerado para o cliente.",
+    image: "public/images/projects/preview.png",
+    tags: ["Web", "SaaS"],
+    href: "#",
+  },
 ];
 
 // Seção 5 , depoimentos (placeholders realistas)
