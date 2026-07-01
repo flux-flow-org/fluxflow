@@ -6,6 +6,7 @@
   :root {
     --flux-purple: #b08eef;
     --flux-deep: #8b5fd6;
+    --flux-aqua: #00e5ff;
     --ink-bg: #0d1115;
   }
 
@@ -117,6 +118,21 @@
     background: var(--flux-purple);
   }
 
+  /* Botão primário com o gradiente assinatura do brandbook (fiel: 45deg aqua , deep 75% , roxo).
+     O aqua fica presente em repouso; no hover o fade desliza suavemente. */
+  .btn-flow {
+    background-image: linear-gradient(45deg, #00e5ff, #8b5fd6 75%, #b08eef);
+    background-size: 260% 260%;
+    background-position: 88% 12%;
+    transition:
+      background-position 0.6s cubic-bezier(0.22, 1, 0.36, 1),
+      box-shadow 0.3s ease,
+      transform 0.3s ease;
+  }
+  .btn-flow:hover {
+    background-position: 30% 70%;
+  }
+
   /* Texto com gradiente de marca */
   .text-gradient {
     background: linear-gradient(120deg, #c9b2f4 0%, #b08eef 45%, #8b5fd6 100%);
@@ -125,17 +141,11 @@
     color: transparent;
   }
 
-  /* Gradiente animado para destaques fluidos (estilo "flux") */
+  /* Gradiente animado com o fade assinatura (45deg aqua , deep 75% , roxo).
+     Faz o aqua fluir pela palavra em loop suave (ping-pong via animate-gradient-pan). */
   .text-gradient-flow {
-    background: linear-gradient(
-      120deg,
-      #c9b2f4 0%,
-      #b08eef 30%,
-      #8b5fd6 50%,
-      #b08eef 70%,
-      #c9b2f4 100%
-    );
-    background-size: 220% auto;
+    background: linear-gradient(45deg, #00e5ff, #8b5fd6 75%, #b08eef);
+    background-size: 240% auto;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;

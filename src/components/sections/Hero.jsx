@@ -3,7 +3,7 @@ import { ArrowRight, Sparkles } from "lucide-react";
 import { WhatsAppIcon } from "../ui/BrandIcons";
 import AnimatedBackground from "../ui/AnimatedBackground";
 import { staggerContainer, fadeUp } from "../../lib/animations";
-import { CONTACT, TECNOLOGIAS } from "../../data/content";
+import { CONTACT } from "../../data/content";
 
 export default function Hero() {
   const reduce = useReducedMotion();
@@ -11,11 +11,11 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative flex min-h-screen items-center overflow-hidden bg-ink-bg pt-28 sm:pt-32"
+      className="relative flex min-h-screen items-center overflow-hidden bg-ink-bg pt-24 sm:pt-32"
     >
       <AnimatedBackground />
 
-      <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-16 px-6 py-16 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:py-24">
+      <div className="relative z-10 mx-auto grid w-full max-w-6xl gap-12 px-5 py-12 sm:gap-16 sm:px-6 sm:py-16 lg:grid-cols-[1.05fr_.95fr] lg:items-center lg:py-24">
         {/* Coluna texto */}
         <motion.div
           variants={staggerContainer(0.12, 0.05)}
@@ -34,7 +34,7 @@ export default function Hero() {
           {/* Headline */}
           <motion.h1
             variants={fadeUp}
-            className="mt-7 font-display text-5xl font-extrabold leading-[1.02] tracking-tightest text-white sm:text-6xl lg:text-7xl"
+            className="mt-6 font-display text-4xl font-extrabold leading-[1.05] tracking-tightest text-white sm:mt-7 sm:text-6xl sm:leading-[1.02] lg:text-7xl"
           >
             Sistemas que{" "}
             <span
@@ -51,7 +51,7 @@ export default function Hero() {
           {/* Subheadline */}
           <motion.p
             variants={fadeUp}
-            className="mt-7 max-w-xl text-lg leading-relaxed text-dim sm:text-xl"
+            className="mt-6 max-w-xl text-base leading-relaxed text-dim sm:mt-7 sm:text-xl"
           >
             A FluxFlow desenvolve software sob medida que transforma
             complexidade operacional em fluxos simples, escaláveis e confiáveis.
@@ -60,13 +60,13 @@ export default function Hero() {
           {/* CTAs */}
           <motion.div
             variants={fadeUp}
-            className="mt-10 flex flex-col gap-4 sm:flex-row sm:items-center"
+            className="mt-8 flex flex-col gap-3 sm:mt-10 sm:flex-row sm:items-center sm:gap-4"
           >
             <a
               href={CONTACT.whatsappUrl}
               target="_blank"
               rel="noopener noreferrer"
-              className="group inline-flex items-center justify-center gap-2 rounded-xl bg-flux-deep px-7 py-4 text-base font-semibold text-white shadow-glow-sm transition-all duration-300 hover:bg-flux-purple hover:shadow-glow"
+              className="btn-flow group inline-flex items-center justify-center gap-2 rounded-xl px-7 py-4 text-base font-semibold text-white shadow-glow-sm hover:shadow-glow"
             >
               <WhatsAppIcon size={18} />
               Começar agora
@@ -81,25 +81,6 @@ export default function Hero() {
             >
               Conheça nossos serviços
             </a>
-          </motion.div>
-
-          {/* Faixa de confiança */}
-          <motion.div
-            variants={fadeUp}
-            className="mt-12 flex flex-wrap items-center gap-x-8 gap-y-3 text-sm text-dim"
-          >
-            <span className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-flux-purple" />
-              +120 projetos entregues
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-flux-purple" />
-              8 anos de experiência
-            </span>
-            <span className="flex items-center gap-2">
-              <span className="h-2 w-2 rounded-full bg-flux-purple" />
-              99.9% de uptime
-            </span>
           </motion.div>
         </motion.div>
 
@@ -121,12 +102,16 @@ export default function Hero() {
                 reduce ? "" : "animate-spin-slow"
               }`}
             >
-              <span className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-flux-purple shadow-glow-sm" />
+              <span className="absolute -top-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rounded-full bg-flow shadow-glow-sm" />
             </div>
             <div
-              className="absolute inset-16 rounded-full border border-white/5"
+              className={`absolute inset-16 rounded-full border border-white/5 ${
+                reduce ? "" : "animate-spin-slow"
+              }`}
               style={{ animationDirection: "reverse" }}
-            />
+            >
+              <span className="absolute -bottom-1 left-1/2 h-2 w-2 -translate-x-1/2 rounded-full bg-flux-aqua shadow-glow-sm" />
+            </div>
 
             {/* Card de vidro central com o ícone da marca */}
             <div
@@ -143,29 +128,9 @@ export default function Hero() {
 
             {/* Pontos flutuantes */}
             <span className="absolute right-4 top-10 h-2 w-2 rounded-full bg-flux-soft/70" />
-            <span className="absolute bottom-12 left-2 h-1.5 w-1.5 rounded-full bg-flux-purple/70" />
+            <span className="absolute bottom-12 left-2 h-1.5 w-1.5 rounded-full bg-flux-aqua/70" />
           </div>
         </motion.div>
-      </div>
-
-      {/* Marquee de tecnologias na base do hero */}
-      <div className="absolute inset-x-0 bottom-0 z-10 border-t border-line/60 bg-ink-bg/40 py-5 backdrop-blur-sm">
-        <div className="mask-fade-x overflow-hidden">
-          <div
-            className={`flex w-max items-center gap-12 ${
-              reduce ? "" : "animate-marquee"
-            }`}
-          >
-            {[...TECNOLOGIAS, ...TECNOLOGIAS].map((tech, i) => (
-              <span
-                key={i}
-                className="text-sm font-medium tracking-wide text-dim/70"
-              >
-                {tech}
-              </span>
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   );

@@ -31,14 +31,14 @@ export default function SectionHeading({
       )}
       <motion.h2
         variants={fadeUp}
-        className="mt-6 font-display text-4xl font-extrabold tracking-tightest text-white sm:text-5xl"
+        className="mt-5 font-display text-3xl font-extrabold tracking-tightest text-white sm:mt-6 sm:text-4xl lg:text-5xl"
       >
         {title}
       </motion.h2>
       {lead && (
         <motion.p
           variants={fadeUp}
-          className={`mt-5 text-lg leading-relaxed text-dim ${
+          className={`mt-4 text-base leading-relaxed text-dim sm:mt-5 sm:text-lg ${
             isCenter ? "mx-auto" : ""
           }`}
         >

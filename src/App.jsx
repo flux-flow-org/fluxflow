@@ -3,8 +3,7 @@ import Hero from "./components/sections/Hero";
 import About from "./components/sections/About";
 import Services from "./components/sections/Services";
 import Process from "./components/sections/Process";
-import WhyFluxFlow from "./components/sections/WhyFluxFlow";
-import Testimonials from "./components/sections/Testimonials";
+import Projects from "./components/sections/Projects";
 import FinalCTA from "./components/sections/FinalCTA";
 import Footer from "./components/Footer";
 import WhatsAppFloat from "./components/ui/WhatsAppFloat";
@@ -26,8 +25,7 @@ export default function App() {
         <About />
         <Services />
         <Process />
-        <WhyFluxFlow />
-        <Testimonials />
+        <Projects />
         <FinalCTA />
       </main>
       <Footer />
