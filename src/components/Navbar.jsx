@@ -69,7 +69,7 @@ export default function Navbar() {
           aria-label="FluxFlow , início"
         >
           <img
-            src="public/images/icons/nobg-icon-fade.png"
+            src="/images/icons/nobg-icon-fade.png"
             alt=""
             className="h-8 w-8 drop-shadow-[0_4px_14px_rgba(176,142,239,0.45)]"
             width="32"

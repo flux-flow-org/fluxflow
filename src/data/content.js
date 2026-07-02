@@ -118,7 +118,7 @@ export const PROJETOS = [
   {
     title: "Nome do projeto",
     desc: "Pequena descrição do projeto: o desafio, a solução construída e o resultado gerado para o cliente.",
-    image: "public/images/projects/preview.png",
+    image: "/images/projects/preview.png",
     tags: ["Web", "SaaS"],
     href: "#",
   },
